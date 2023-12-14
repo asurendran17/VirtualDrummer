@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    margin: 5px;
+    background-color: #ffffff; /* Dark blue background color */
+    font-family: 'Roboto', sans-serif;
+}
+.heading{
+    height: 50px;
+    display: flex;
+    border-radius: 40px;
+    text-shadow: 1px 0px #0bb6e0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    background-color: #120589;
+    width: 300px;
+    
+}
+.drum-kit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.key {
+    border: 2px solid #ecf0f1; /* Light gray border */
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: #3498db; /* Blue background color */
+    color: #ecf0f1; /* Light gray text color */
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.07s;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key kbd {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sound {
+    display: none;
+}
+
+.key.playing {
+    transform: scale(1.1);
+    background-color: #e74c3c; /* Red background color when playing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
